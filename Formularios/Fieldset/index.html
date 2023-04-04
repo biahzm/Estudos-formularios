@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body>
+    <form method="post" action="" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro nome: <br/>
+                <input type="text" name="name" required minlength="3"/>
+            </label><br/>
+            <label>
+                Sobrenome:<br/>
+                <input type="text" name="lastname" required/>
+            </label><br/>
+            <label>
+                Data de nascimento: <br/>
+                <input type="date" name="birthdate" min="1900-01-01" max="2023-04-03"/>
+            </label><br/>
+            <label>
+                E-mail: <br/>
+                <input type="email" name="email"/>
+            </label><br>
+            <label>Foto: <br/>
+                <input type="file" name="photo" accept="image/*"/>
+            </label><br/>
+            <label>
+                Currículo:<br/>
+                <input type="file" name="curriculum" accept="application/pdf"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname"/>
+            </label><br/>
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle"/>
+            </label>
+        </fieldset>
+        <input type="submit" value="Cadastrar"/>
+    </form>
+    
+</body>
+</html>
